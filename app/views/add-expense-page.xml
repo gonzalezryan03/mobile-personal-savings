@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo" class="bg-gray-100">
+    <ActionBar title="Add Expense" class="bg-blue-500 text-white" />
+    
+    <ScrollView>
+        <StackLayout class="p-4 space-y-4">
+            <StackLayout class="space-y-2">
+                <Label text="Amount" class="text-gray-600" />
+                <TextField text="{{ amount }}" hint="Enter amount" keyboardType="number"
+                    class="input p-4 bg-white rounded-lg border border-gray-300" />
+            </StackLayout>
+
+            <StackLayout class="space-y-2">
+                <Label text="Category" class="text-gray-600" />
+                <TextField text="{{ category }}" hint="Enter category"
+                    class="input p-4 bg-white rounded-lg border border-gray-300" />
+            </StackLayout>
+
+            <StackLayout class="space-y-2">
+                <Label text="Description" class="text-gray-600" />
+                <TextField text="{{ description }}" hint="Enter description"
+                    class="input p-4 bg-white rounded-lg border border-gray-300" />
+            </StackLayout>
+
+            <Button text="Save Expense" tap="saveExpense"
+                class="btn bg-blue-500 text-white font-bold py-4 rounded-lg" />
+        </StackLayout>
+    </ScrollView>
+</Page>

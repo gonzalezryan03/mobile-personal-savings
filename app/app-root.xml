@@ -1,0 +1,12 @@
+<Frame defaultPage="views/profile-page">
+    <TabView androidTabsPosition="bottom">
+        <TabView.items>
+            <TabViewItem title="Profile" iconSource="res://profile">
+                <Frame defaultPage="views/profile-page" />
+            </TabViewItem>
+            <TabViewItem title="Expenses" iconSource="res://expenses">
+                <Frame defaultPage="views/expenses-page" />
+            </TabViewItem>
+        </TabView.items>
+    </TabView>
+</Frame>
